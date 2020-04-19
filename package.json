@@ -1,0 +1,32 @@
+{
+  "name": "lerna-yarn-workspaces",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": "Clayton Marinho <claytonmarinho@gmail.com>",
+  "private": true,
+  "scripts": {
+    "clean": "find . -name \"node_modules\" -type d -prune -exec rm -rf '{}' +",
+    "build": "yarn workspaces run build && lerna bootstrap"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/claytonmarinho/lerna-yarn-workspaces-webpack"
+  },
+  "bugs": {
+    "url": "https://github.com/claytonmarinho/lerna-yarn-workspaces-webpack/issues"
+  },
+  "keywords": [
+    "yarn-workspaces",
+    "lerna",
+    "node",
+    "webpack",
+    "monorepo",
+    "express"
+  ],
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^3.20.2"
+  }
+}

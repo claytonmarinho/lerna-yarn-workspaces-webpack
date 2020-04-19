@@ -1,0 +1,19 @@
+{
+  "name": "@lerna-yarn-workspaces/utils",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "author": "Clayton Marinho <claytonmarinho@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf ./build && webpack"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "dependencies": {
+    "faker": "^4.1.0"
+  }
+}

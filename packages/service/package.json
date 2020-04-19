@@ -1,0 +1,21 @@
+{
+  "name": "@lerna-yarn-workspaces/service",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "author": "Clayton Marinho <claytonmarinho@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf ./build && webpack",
+    "start": "PORT=3005 NODE_ENV=\"development\" webpack & nodemon --inspect=5500 ./dist/index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "dependencies": {
+    "@lerna-yarn-workspaces/utils": "0.0.1",
+    "express": "^4.17.1"
+  }
+}
